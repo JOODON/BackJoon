@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class resion {
+public class Main23 {
     public static void main(String[]args){
         Scanner in=new Scanner(System.in);
         HashSet<Integer> h=new HashSet<Integer>();
