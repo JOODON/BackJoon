@@ -1,16 +1,32 @@
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class resion {
     public static void main(String[]args){
         Scanner in=new Scanner(System.in);
-        HashSet<Integer> h=new HashSet<Integer>();
 
-        for(int i=0; i<10;i++){
-            h.add(in.nextInt()%42);
+        String arr[] = new String[in.nextInt()];
+
+        for(int i=0; i<arr.length; i++){
+            arr[i]=in.next();
         }
         in.close();
-        System.out.println(h.size());
+
+        for(int i=0; i< arr.length; i++){
+            int cnt = 0;
+            int sum = 0;
+
+            for (int j=0; j<arr[i].length(); j++){
+                if (arr[i].charAt(j) == 'O'){
+                    cnt++;
+                }else {
+                    cnt=0;
+                }
+                sum+=cnt;
+            }
+
+        }
     }
 }
